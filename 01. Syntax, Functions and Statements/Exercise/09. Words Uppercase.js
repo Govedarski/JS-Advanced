@@ -4,3 +4,6 @@ function solve(text){
     matches = matches.map(word => word.toUpperCase())
     console.log(matches.join(', '))
 }
+
+solve('Hi, how are you?');
+solve('hello');
