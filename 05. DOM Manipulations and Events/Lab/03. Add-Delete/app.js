@@ -2,7 +2,7 @@ function addItem() {
 
     function deleteItem(e) {
         if (e.target.tagName.toLowerCase() === 'a') {
-            e.target.parentElement.remove();
+            e.currentTarget.remove();
         }
     }
 

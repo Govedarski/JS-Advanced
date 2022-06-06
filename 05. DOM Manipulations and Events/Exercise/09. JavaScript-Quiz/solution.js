@@ -16,7 +16,7 @@ function solve() {
         const selectedAnswer = e.currentTarget.querySelector('p').textContent;
         const currentQuestionSection = e.currentTarget.parentElement.parentElement;
         const questionSectionIndex = quizElementsToHideShow.indexOf(currentQuestionSection);
-        const nextElementToShow = quizElementsToHideShow[questionSectionIndex + 1];
+        const nextElementToShow = currentQuestionSection.nextElementSibling
         givenAnswers[questionSectionIndex] = selectedAnswer;
 
         currentQuestionSection.style.display = 'none';
