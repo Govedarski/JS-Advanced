@@ -9,6 +9,10 @@ function add(num){
 
     return adding(num)
 }
-
-console.log(add(1))
+console.log(add(1)())
 console.log(add(1)(6)(-3))
+
+
+let sum = a => b => b? sum(a+b) : a;
+
+console.log(sum(3)(2)(1)())
